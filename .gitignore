@@ -4,7 +4,6 @@ rootfs-*
 *.ko
 engine
 logs/
-boilerplate/
 alpine-miniroots-*.tar.gz
 # Build artifacts (user-space)
 boilerplate/engine
