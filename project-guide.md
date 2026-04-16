@@ -2,8 +2,8 @@
 # Multi-Container Runtime with Kernel Memory Monitor
 
 ## 1. Team Information
-- Name: Saanvi Samayam
-- Name 2 : Rishab Naveen
+- Name 1: Saanvi Samayam
+- Name 2: Rishab Naveen
 - Course: Operating Systems Project
 
 ---
@@ -123,22 +123,27 @@ sudo rmmod monitor
 
 ### 1. Multi-container supervision
 <img width="727" height="80" alt="image" src="https://github.com/user-attachments/assets/69723299-b6c2-48b1-9c3b-dae6d03e919e" />
+
 Multiple containers (alpha, beta) running under a single supervisor.
 
 ### 2. Metadata tracking
 <img width="727" height="135" alt="image" src="https://github.com/user-attachments/assets/222d2676-4bef-4373-ba4e-694e195267a4" />
+
 `engine ps` shows container ID, PID, and status.
 
 ### 3. Logging
 <img width="727" height="44" alt="image" src="https://github.com/user-attachments/assets/64c890ed-0cb8-4f8d-ba7e-5fe5f6220d14" />
+
 Logs captured via pipe-based logging system and stored in log files.
 
 ### 4. CLI and IPC
 <img width="714" height="137" alt="image" src="https://github.com/user-attachments/assets/54b1b863-793b-4521-94f3-ec8b510e3660" />
+
 CLI commands interact with supervisor to start and manage containers.
 
 ### 5 & 6. Memory Monitoring (Soft and Hard Limits)
 <img width="925" height="183" alt="image" src="https://github.com/user-attachments/assets/44342657-007c-495a-abd9-6b2929d6fe36" />
+
 * Soft Limit: Kernel logs a warning when memory exceeds soft limit.
 * Hard Limit: Kernel kills process when memory exceeds hard limit.
 
@@ -153,6 +158,7 @@ Example output:
 ### 7. Scheduling Experiment
 <img width="709" height="205" alt="image" src="https://github.com/user-attachments/assets/54a5447d-b272-4240-8032-7e940200701b" />
 <img width="709" height="204" alt="image" src="https://github.com/user-attachments/assets/494e0f70-6958-4536-9ed5-817666abac3e" />
+
 CPU-bound (`cpu_hog`) and I/O-bound (`io_pulse`) workloads were run simultaneously. Differences in execution behavior demonstrate Linux scheduler handling.
 
 ### 8. Clean Teardown
