@@ -294,5 +294,3 @@ This project demonstrates integration of:
 * Linux system behavior
 
 ```
-
-
